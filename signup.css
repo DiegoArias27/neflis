@@ -1,0 +1,513 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.logo img{
+    width: 200px;
+}
+
+.logo{
+    margin-top: 0;
+    top: -1%;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.nav{
+    border-bottom: 1px solid #e6e6e6;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.iniciar{
+    right: 0;
+    position: absolute;
+    margin-right: 60px;
+}
+
+.iniciar a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.iniciar a:hover{
+    text-decoration: underline;
+}
+
+.centrado{
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    position: relative;
+}
+
+.check img{
+    width: 50px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title h1{
+    font-size: 32;
+}
+
+
+.material-symbols-outlined {
+    color: #e50914;
+    font-size: 40px !important;
+
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    align-items: start;
+    margin: 20px 0px;
+}
+
+.beneficios p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.siguiente button{
+    margin-top: 40px;
+    color: white;
+    background-color: #e50914;
+    width: 300px;
+    padding: 20px;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+}
+
+.beneficios-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+select {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #737373;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  color: #737373;
+}
+
+select:hover {
+  border-color: #ffffff;
+}
+
+option{
+    background-color: white;
+    color: #737373;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: #f3f3f3;
+    margin-top: 200px;
+    flex-direction: column;
+    padding: 20px 70px;
+    color: #737373;
+    box-sizing: border-box;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: row;
+}
+
+.opciones li{
+    margin-right: 120px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.colum{
+    display: flex;
+    flex-direction: column;
+}
+
+.opciones li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pregunta span:hover{
+    text-decoration: underline;
+}
+/*-------------------planform-----------------------------*/
+.cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+}
+.promo{
+    text-align: center;
+}
+.promo span{
+    font-size: 20px;
+}
+
+.promo p{
+    color: #0071eb;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.azul{
+    color: #0071eb;
+}
+
+.planes{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-left: 200px;
+    flex-direction: column;
+}
+
+.nombre-plan{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    flex-direction: column;
+    color: white;
+    border-radius: 12px;
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);;
+}
+
+.nombre-plan h2{
+    margin: 0;
+}
+
+.planes-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.plan-card{
+    border: 1px solid #737373;
+    border-radius: 12px;
+    height: 800px;
+    width: 340px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.privilegios{
+    border-bottom: 1px solid #e6e6e6;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.privilegios span{
+    color: #767676;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.privilegios p{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+.letras{
+    width: 1100px;
+    font-size: 13px;
+    color: #737373;
+}
+
+.letras a{
+    text-decoration: none;
+    color: #0071eb;
+}
+
+.sig button{
+    margin-top: 40px;
+    color: white;
+    background-color: #e50914;
+    width: 400px;
+    padding: 20px;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+}
+
+.sig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.plan-card.active {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+  transition: box-shadow 0.3s ease;
+}
+
+
+/*--------regform---------*/
+
+.ti{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 450px;
+}
+.ti h1{
+    font-size: 32;
+}
+
+.ti p{
+    margin: 5px;
+    font-size: 18px;
+}
+
+.datos form{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.datos input{
+    width: 400px;
+    height: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.datos button{
+    margin-top: 40px;
+    color: white;
+    background-color: #e50914;
+    width: 400px;
+    padding: 20px;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    box-sizing: content-box;
+}
+
+/*------------------verify----------------*/
+.t{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+}
+.t h1{
+    text-align: center;
+    font-size: 32;
+}
+.t span{
+    margin-top: 20px;
+}
+.t p{
+    margin: 5px;
+    font-size: 18px;
+}
+
+button{
+    cursor: pointer;
+}
+
+/*-------------------metodos--------------------*/
+.metodos form{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.key input{
+    width: 180px !important;
+    margin-right: 5px;
+}
+
+.metodos input{
+    width: 400px;
+    height: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.metodos button{
+    color: #333333;
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    
+}
+
+.met{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.tarjetas{
+   width: 150px;
+    margin-left: 10px; 
+}
+.metodos button span{
+    margin: 0;
+    right: 0;
+    position: absolute;
+    margin-right: 20px;
+}
+.negro{
+    margin-left: 20px !important;
+    color: #333333;
+    font-size: 20px !important;
+}
+
+.p{
+    width: 400px;
+    background-color: #e6e6e6;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.p span{
+    color: #333333;
+    font-weight: 700;
+}
+
+.p p{
+    color: #737373;
+    font-size: 14px;
+}
+.p li{
+    list-style: none;
+    color: #0071eb;
+    margin-right: 20px; 
+}
+
+.title-tarjeta{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+}
+.title-tarjeta h1{
+    text-align: left;
+    font-size: 32;
+}
+.title-tarjeta span{
+    margin-top: 20px;
+}
+.title-tarjeta p{
+    margin: 5px;
+    font-size: 18px;
+}
+.key{
+    display: flex;
+    flex-direction: row;
+}
+
+.acepto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.acepto input{
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    z-index: 1;
+}
+.acepto span{
+    position: absolute;
+    padding-left: 100px;
+    margin: 0;
+    z-index: 0;
+}
+
+.membresia button{
+    margin-top: 40px;
+    color: white;
+    background-color: #e50914;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+}
+
+.politicas{
+    margin-top: 20px;
+}

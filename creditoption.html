@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="iniciar">
+            <a href="">Iniciar sesión</a>
+        </div>
+    </div>
+    <div class="centrado">
+        <div class="check">
+            <img src="candado.png" alt="">
+        </div>
+        <div class="title-tarjeta">
+            <span>PASO <strong>4</strong> DE <strong>4</strong></span>
+            <h1>Configura tu tarjeta de crédito o débito</h1>
+            <img style="width: 150px;" src="tarjetas.png" alt="">
+            <div class="metodos">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Número de tarjeta">
+                    <div class="key">
+                        <input type="text" id="fechaVencimiento" placeholder="MM/AA" maxlength="5">
+                        <input type="text" id="" placeholder="CVV" maxlength="3">
+                    </div>
+                    <input type="text" placeholder="Nombre de la tarjeta">
+                </form>
+                <div class="p">
+                    <div>
+                        <span>$119 al mes a partir del tercer mes</span>
+                        <p>Cancela cuando quieras</p>
+                    </div>
+                    <div>
+                        <li>Cambiar</li>
+                    </div>
+                </div>
+                <div class="politicas">
+                    <span>Los pagos se procesarán internacionalmente. Es posible que se apliquen comisiones bancarias
+                        adicionales.</span><br><br>
+                    <span class="letras">Al hacer clic en el cuadro, aceptas nuestros <a href="">Términos de uso</a> y nuestra <a href="">Declaración de
+                        privacidad</a>, y declaras que tienes más de 18 años. Tu membresía de Netflix seguirá activa de
+                        manera automática y, hasta que la canceles, se te facturará la cuota de membresía (actualmente
+                        de $119 al mes) a través de la forma de pago elegida. Puedes cancelarla en cualquier momento
+                        para evitar cargos en el futuro.</span><br><br>
+                    <div class="acepto">
+                        <input type="checkbox" name="" id="">
+                        <br>
+                        <span>Acepto.</span>
+                    </div>
+                    <div class="membresia">
+                        <button type="button">Iniciar membresía</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="pregunta">
+            <p>¿Preguntas? Llama al <span>800 953 9947</span></p>
+        </div>
+        <div class="opciones">
+            <div class="colum">
+                <li>Preguntas frecuentes</li>
+                <li>Privacidad</li>
+            </div>
+            <div class="colum">
+                <li>Centro de ayuda</li>
+                <li>Preferencias de cookies</li>
+            </div>
+            <div class="colum">
+                <li>Tienda de Netflix</li>
+                <li>Información corporativa</li>
+            </div>
+
+            <li>Términos de uso</li>
+        </div>
+        <div class="opciones">
+
+
+
+        </div>
+        <div class="idioma">
+            <form action="">
+                <select name="idioma" id="idioma">
+                    <option value="">文 Español</option>
+                    <option value="">文 Ingles</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const input = document.getElementById('fechaVencimiento');
+
+    input.addEventListener('input', (e) => {
+        let valor = e.target.value.replace(/\D/g, ''); // quitar todo lo que no sea número
+
+        if (valor.length >= 2) {
+            // insertar '/' después de los dos primeros dígitos
+            valor = valor.substring(0, 2) + '/' + valor.substring(2, 4);
+        }
+
+        // limitar a 5 caracteres (MM/AA)
+        e.target.value = valor.substring(0, 5);
+    });
+</script>
+
+</html>

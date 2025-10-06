@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.logo {
+    justify-content: left;
+    position: absolute;
+    z-index: 3;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    margin-left: 73%;
+    margin-top: -4%;
+}
+
+.container-form {
+    margin-bottom: 80px;
+    width: 600px;
+    height: 130px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    outline-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px 15px 16px;
+    font-size: 12pt;
+    color: white;
+}
+
+.nav-derecha{
+    width: 100%;
+    height: auto;
+    z-index: 4;
+    position: absolute;
+    justify-content: end;
+    right: 10%;
+    display: flex;
+    margin-top: 20px;
+}
+select {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  background-color: rgba(22, 22, 22, 0.7);
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  color: white;
+}
+
+select:hover {
+  border-color: #ffffff;
+}
+
+option{
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+h3{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+}
+
+.title {
+    width: 100%;
+}
+p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.fondo img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.fondo {
+    position: relative;
+    display: block;
+    top: -20px;
+}
+
+.oscuro {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(360deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.8965) 8.5%,
+            rgba(0, 0, 0, 0.8861) 17%,
+            rgba(0, 0, 0, 0.8688) 25.5%,
+            rgba(0, 0, 0, 0.8444) 34%,
+            rgba(0, 0, 0, 0.8132) 42.5%,
+            rgba(0, 0, 0, 0.775) 51%,
+            rgba(0, 0, 0, 0.7368) 59.5%,
+            rgba(0, 0, 0, 0.7056) 68%,
+            rgba(0, 0, 0, 0.6813) 76.5%,
+            rgba(0, 0, 0, 0.6639) 85%,
+            rgba(0, 0, 0, 0.6535) 93.5%,
+            rgba(0, 0, 0, 0.65) 100%);
+}
+
+.nav-oscuro {
+    z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.8000) 0.000%,
+            rgba(0, 0, 0, 0.7889) 8.333%,
+            rgba(0, 0, 0, 0.7556) 16.67%,
+            rgba(0, 0, 0, 0.7000) 25.00%,
+            rgba(0, 0, 0, 0.6222) 33.33%,
+            rgba(0, 0, 0, 0.5222) 41.67%,
+            rgba(0, 0, 0, 0.4000) 50.00%,
+            rgba(0, 0, 0, 0.2778) 58.33%,
+            rgba(0, 0, 0, 0.1778) 66.67%,
+            rgba(0, 0, 0, 0.1000) 75.00%,
+            rgba(0, 0, 0, 0.04444) 83.33%,
+            rgba(0, 0, 0, 0.01111) 91.67%,
+            rgba(0, 0, 0, 0.000) 100.0%);
+}
+
+.nav {
+    width: 100%;
+    position: absolute;
+    height: 120px;
+}
+
+.datos-mail{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.datos-mail button{
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: .5rem;
+}
+
+.iniciar button{
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: .5rem;
+}
+
+.datos-mail button span{
+    margin-left: .75rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.curvas{
+    z-index: auto;
+    position: absolute;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    height: 250px;
+    width: 200%;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    left: -50%;
+    border-bottom: none;
+    margin:auto;
+    border-top: solid .25rem transparent;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+}
+
+.contenedor{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    top: -8rem;
+}
+
+.curvas::before{
+    content: '';
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+.card img{
+    width: 80px;
+    margin-right: 20px;
+}
+.card:hover .card-azul::before{
+  opacity: 1;
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 8;
+    top: 40%;
+    position: relative;
+    transition: all 0.5s;
+}
+.card:hover{
+    scale: 1.03;
+}
+
+.card-azul{
+    border-radius: 1rem;
+    background: linear-gradient(91deg, #261733, #151a3f);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-azul::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(91deg, #482566 0%, #161d52 99.51%);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: -1;
+}
+.card-azul h3{
+    margin-left: 40px;
+    margin-right: 16px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.card-azul p{
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 16px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    z-index: 1;
+}
+
+.card-azul button{
+    margin-right: 40px;
+    margin-left: 400px;
+    z-index: 1;
+    background-color: rgba(105, 105, 105, 0.573);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
