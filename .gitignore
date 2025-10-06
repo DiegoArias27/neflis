@@ -1,0 +1,63 @@
+# --- Node / NPM ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# --- Logs / PIDs ---
+logs/
+*.log
+*.log.*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# --- Variables de entorno (mantén un .env.example) ---
+.env
+.env.*
+!.env.example
+
+# --- Cobertura / pruebas ---
+coverage/
+.nyc_output/
+*.lcov
+
+# --- Artefactos de build / temporales ---
+dist/
+build/
+.tmp/
+temp/
+
+# --- Cachés varias ---
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.node_repl_history
+
+# --- Frameworks front (por si acaso) ---
+.next/
+out/
+.svelte-kit/
+.nuxt/
+.vite/
+
+# --- SO / Editores ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Plataformas de despliegue ---
+.netlify/
+.vercel/
+# (archivos de config como netlify.toml o vercel.json SÍ conviene versionarlos)
+
+# --- Otros binarios temporales ---
+*.orig

