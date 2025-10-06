@@ -4,6 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
+app.use(express.static(__dirname));
 app.use(express.json());
 app.use(cors());
 
@@ -17,9 +18,9 @@ const transporter = nodemailer.createTransport({
 });
 
 // (Opcional) Verificar conexión SMTP al arrancar
-transporter.verify().then(()=>{
+transporter.verify().then(() => {
   console.log('SMTP listo para enviar');
-}).catch(err=>{
+}).catch(err => {
   console.error('Error SMTP:', err);
 });
 

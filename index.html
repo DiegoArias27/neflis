@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+
     <title>Netflix</title>
 </head>
 
@@ -27,7 +35,8 @@
                 </div>
                 <div class="iniciar">
                     <form action="">
-                        <button type="button">Iniciar sesión</button>
+                        <button type="button"> <a href="login.html">Iniciar Sesión</a>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -41,9 +50,10 @@
                 </div>
                 <form action="">
                     <div class="datos-mail">
-                        <input type="email" placeholder="Email">
-                        <a href="signup.html"><button type="button">Comenzar <span class="material-symbols-outlined">arrow_forward_ios</span>
-                        </button></a>
+                        <input type="email" placeholder="Email" required>
+                        <a href="signup.html"><button type="button">Comenzar <span
+                                    class="material-symbols-outlined">arrow_forward_ios</span>
+                            </button></a>
                     </div>
                 </form>
             </div>
