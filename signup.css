@@ -552,3 +552,67 @@ button {
     /* sombra sutil */
     z-index: 1;
 }
+
+/* ==== Responsivo (append) ==== */
+
+/* Escritorios medianos */
+@media (max-width: 1200px) {
+  .beneficios { width: 90%; }
+  .planes { margin-left: 60px; }
+  .letras { width: 90%; }
+  .planes-card { flex-wrap: wrap; gap: 16px; }
+  .plan-card { width: calc(50% - 16px); height: auto; }
+}
+
+/* Laptops/tablets */
+@media (max-width: 992px) {
+  .nav { height: 72px; }
+  .logo img { width: 150px; }
+  .iniciar { margin-right: 20px; }
+
+  .beneficios {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .centrado { margin-top: 60px; }
+
+  .planes { margin-left: 24px; }
+  .plan-card { width: 100%; }
+}
+
+/* Tablets y abajo */
+@media (max-width: 768px) {
+  .logo { position: static; margin: 0 0 0 16px; }
+  .nav { position: sticky; top: 0; background: #fff; z-index: 5; }
+  .iniciar { position: static; margin: 0 16px 0 auto; }
+
+  .ti, .t, .title-tarjeta { width: min(450px, 92vw); }
+
+  .datos input, .datos button,
+  .metodos input, .metodos button,
+  .p, .membresia button { width: 100%; }
+
+  .key { gap: 8px; }
+  .key input { width: calc(50% - 4px) !important; }
+
+  .footer { padding: 20px; height: auto; }
+  .opciones { flex-direction: column; }
+  .opciones li { margin-right: 0; }
+}
+
+/* Teléfonos */
+@media (max-width: 480px) {
+  .iniciar a { font-size: 16px; }
+
+  .ti h1, .t h1, .title-tarjeta h1 { font-size: 24px; }
+  .ti p,  .t p,  .title-tarjeta p  { font-size: 16px; }
+
+  .siguiente button, .sig button, .membresia button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  .tarjetas { width: 120px; }
+}

